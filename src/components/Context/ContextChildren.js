@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { CountContext } from "./ContextParent";
+import { Child } from "../Parent Child/Child";
 
 export const ChildA = () => {
   console.log("Child A render");
@@ -10,6 +11,8 @@ export const ChildA = () => {
     </>
   );
 };
+
+export const MemoizedChildA = React.memo(ChildA);
 
 export const ChildB = () => {
   console.log("Child B render");
