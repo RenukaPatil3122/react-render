@@ -1,5 +1,4 @@
 import React from "react";
-import { Child } from "../Parent Child/Child";
 
 export const ChildTwo = () => {
   console.log("ChildTwo Render");
